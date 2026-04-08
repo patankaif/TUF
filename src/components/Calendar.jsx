@@ -4,6 +4,7 @@ import "./Calendar.css";
 const Calendar = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedDates, setSelectedDates] = useState([]);
+  const [noteValue, setNoteValue] = useState("");
 
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
@@ -60,11 +61,12 @@ const Calendar = () => {
       <div className="calendarBody">
         <div className="notes">
           <h3>Notes</h3>
-          <div className="note-lines">
-            {[...Array(10)].map((_, i) => (
-              <div key={i} className="line"></div>
-            ))}
-          </div>
+          <textarea 
+            className="note-textarea"
+            value={noteValue}
+            onChange={(e) => setNoteValue(e.target.value)}
+            placeholder="Write your notes here..."
+          />
         </div>
 
         <div className="calendarContent">
