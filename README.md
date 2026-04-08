@@ -30,6 +30,19 @@ npm run dev
 ```
 The app will be available at `http://localhost:5173`.
 
+## 🌐 Deployment (Netlify)
+
+This project is optimized for deployment on **Netlify** via GitHub integration:
+
+1.  **Log in** to [Netlify](https://app.netlify.com/).
+2.  Click **"Add new site"** > **"Import an existing project"**.
+3.  Select **GitHub** and authorize.
+4.  Choose the **`TUF`** repository.
+5.  Netlify will automatically detect the settings from `netlify.toml`:
+    - **Build Command**: `npm run build`
+    - **Publish Directory**: `dist`
+6.  Click **"Deploy Site"**.
+
 ## 🛠️ Tech Stack
 
 - **Framework**: [React 19](https://react.dev/)
