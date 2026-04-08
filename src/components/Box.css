@@ -76,6 +76,7 @@ body {
   .monthHeader h2 {
     font-size: 28px;
     font-weight: bold;
+    color: #a4133c;
   }
   
   .monthHeader button {

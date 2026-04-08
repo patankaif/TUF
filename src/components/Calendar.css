@@ -23,7 +23,7 @@
 .monthHeader h2 {
   font-size: 26px;
   font-weight: bold;
-  color: white;
+  color: #a4133c;
   position: absolute;    
   left: 45%;
   transform: translateX(-50%);  
@@ -55,7 +55,7 @@
 }
 
 .notes {
-  flex: 1;
+  flex: 1.4;
   text-align: left;
 }
 
