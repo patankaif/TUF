@@ -1,0 +1,27 @@
+.spring {
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: 360px;
+  
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  
+    pointer-events: none;
+    z-index: 2;
+  
+    background: transparent;   
+  }
+  
+  .ring {
+    width: 4px;    
+    height: 14px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background: white;
+  
+
+    
+    transform: scaleX(0.7);
+  }

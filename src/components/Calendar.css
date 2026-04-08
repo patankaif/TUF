@@ -1,0 +1,128 @@
+
+
+.calendar {
+  width: 380px;
+  margin: 0 auto;   
+}
+
+.monthHeader {
+  position: absolute;
+  top: -75px;  
+  left: 0;
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.monthHeader h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  position: absolute;    
+  left: 45%;
+  transform: translateX(-50%);  
+}
+
+.monthHeader button {
+  position: absolute;
+  top: 10px;
+  border: 2px solid #2ea3db;
+  border-radius: 8px;
+  padding: 4px 10px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.monthHeader button:first-child {
+  left: 40px;
+}
+
+.monthHeader button:last-child {
+  right: 90px;
+}
+
+.calendarBody {
+  margin-top: 270px;  
+  padding: 0 40px 20px 40px;
+  display: flex;
+  gap: 30px;
+}
+
+.notes {
+  flex: 1;
+  text-align: left;
+}
+
+.notes h3 {
+  font-size: 16px;
+  color: #a4133c;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.note-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.line {
+  border-bottom: 1px solid #ffccd5;
+  width: 100%;
+  height: 5px;
+}
+
+.calendarContent {
+  flex: 1.5;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #a4133c;
+  font-size: 14px;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+
+
+
+.date {
+  padding: 8px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.date:hover {
+  background: #eee;
+}
+
+.inRange {
+  background: #d0e8ff;
+}
+
+.start,
+.end {
+  background: #2ea3db;
+  color: white;
+}
+.selected {
+  background: #2ea3db;
+  color: white;
+}
