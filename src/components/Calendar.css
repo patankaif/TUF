@@ -23,7 +23,7 @@
 .monthHeader h2 {
   font-size: 26px;
   font-weight: bold;
-  color: #a4133c;
+  color: white;
   position: absolute;    
   left: 45%;
   transform: translateX(-50%);  
