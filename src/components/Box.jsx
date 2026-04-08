@@ -9,20 +9,17 @@ function Box() {
         <Spring />
 
         <div className="box">
-            <img src="/image2.jpg" alt="cover" className="topImage" />
-            <div className="wave">
-                <svg viewBox="0 0 500 100" preserveAspectRatio="none">
-                <path
-                    d="M0,0 L500,0 L500,60 
-                    Q400,100 300,70 
-                    Q200,40 100,80 
-                    Q50,100 0,70 Z"
-                />
-                </svg>
-            </div>
+          <img src="/image2.jpg" alt="cover" className="topImage" />
+          <div className="wave">
+            <svg viewBox="0 0 500 100" preserveAspectRatio="none">
+              <path
+                d="M0,0 L500,0 v60 C400,90 250,30 0,80 Z"
+              />
+            </svg>
+          </div>
 
-            <Calendar />
-            <div className="content"></div>
+          <Calendar />
+          <div className="content"></div>
         </div>
       </div>
     </div>
