@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./Calendar.css";
 
-const Calendar = () => {
-  const [currentDate, setCurrentDate] = useState(new Date());
+const Calendar = ({ currentDate, setCurrentDate }) => {
   const [selectedDates, setSelectedDates] = useState([]);
   const [noteValue, setNoteValue] = useState("");
 
